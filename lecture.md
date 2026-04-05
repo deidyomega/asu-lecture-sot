@@ -39,18 +39,13 @@ Apr 9th - Arizona State University
 ## My Role
 
 **IRC - Survivors of Torture (SOT) Program, 2010 - 2012**\
-(Software Developer)
-
 **UNHCR - Survivors of Torture (SOT) Program, 2012 - 2014**\
-(Technical Liaison Officer)
-
-**UNHCR - Survivors of Torture (SOT) Program, 2022 - 2023**\
-(Contractor)
+**UNHCR - Survivors of Torture (SOT) Program, 2022 - 2023**
 
 - Built the data pipeline between clinical intake and geospatial analysis.
 - Limited field work in northern Iraq.
 - Goal: corroborate survivor testimony using GIS and temporal data to determine which military and paramilitary units were likely involved in torture
-- Not replacing testimony - **validating it with data the survivor could not have known**
+- Not replacing testimony - **validating it with data the survivor could not have known without being there**
 
 > Speaker notes: "So who am I in all this? From 2011 to 2013 I was a Technical Liaison Officer with UNHCR, working specifically with the Survivors of Torture program. My job was to be the bridge between the clinical side and the analytical side. I wasn't the person interviewing survivors. I wasn't a field investigator. I was the person who built and operated the system that connected a survivor's words to spatial-temporal evidence. The key idea - and I want you to hold onto this phrase because it's the foundation of everything I'm going to show you - is that we were validating testimony with data the survivor could not have known. That's what makes the corroboration meaningful. They didn't have access to classified troop movements. If their account lines up with that data anyway, that tells you something.”
 > 
