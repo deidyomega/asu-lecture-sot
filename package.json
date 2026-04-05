@@ -1,0 +1,10 @@
+{
+  "name": "lecture-slides",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reveal.js slides for 'What Satellites Can't See'. Content lives in lecture.md.",
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  }
+}

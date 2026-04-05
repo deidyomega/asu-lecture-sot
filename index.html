@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>What Satellites Can't See</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme" />
+
+    <style>
+      /* Clean typography overrides — nothing flashy */
+      :root {
+        --r-main-font-size: 30px;
+        --r-heading1-size: 2.2em;
+        --r-heading2-size: 1.5em;
+        --r-heading3-size: 1.2em;
+      }
+      .reveal {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+      }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+        font-family: inherit;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: normal;
+      }
+      .reveal h2 {
+        margin-bottom: 0.5em;
+      }
+      .reveal p, .reveal li {
+        line-height: 1.4;
+      }
+      .reveal ul, .reveal ol {
+        margin: 0.3em 0 0.3em 1em;
+      }
+      .reveal li {
+        margin: 0.25em 0;
+      }
+      .reveal li > ul,
+      .reveal li > ol {
+        font-size: 0.95em;
+      }
+      .reveal blockquote {
+        font-style: normal;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.04);
+        border-left: 3px solid #888;
+        padding: 0.6em 1em;
+      }
+      .reveal table {
+        font-size: 0.7em;
+        margin: 0 auto;
+      }
+      .reveal table th,
+      .reveal table td {
+        padding: 0.3em 0.6em;
+      }
+      /* JS sets --fit-scale on overflowing slides to shrink their font */
+      .reveal .slides > section[data-fit] {
+        font-size: calc(var(--r-main-font-size) * var(--fit-scale, 1));
+      }
+      .reveal strong {
+        color: #fff;
+      }
+      .reveal .slide-number {
+        font-size: 14px;
+      }
+
+      /* Content-warning slide: minimal, centered, no auto-advance */
+      .reveal section.content-warning {
+        text-align: center;
+      }
+      .reveal section.content-warning h2 {
+        display: none; /* hide the "Slide 11: Content Warning" heading */
+      }
+      .reveal section.content-warning p {
+        font-size: 1.6em;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!--
+          Content lives in lecture.md. The reveal.js markdown plugin loads it,
+          splits on `---` lines for slides, and extracts `> Speaker notes:` blocks
+          into <aside class="notes"> via the regex below.
+
+          Press S during the presentation to open the speaker view.
+        -->
+        <section
+          data-markdown="lecture.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-vertical="^\r?\n--\r?\n$"
+          data-separator-notes="^&gt;\s*Speaker"
+        ></section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+        controls: true,
+        progress: true,
+        center: true,
+        transition: "fade",
+        autoSlide: 0, // never auto-advance
+        plugins: [RevealMarkdown, RevealNotes],
+      });
+
+      // Post-process slides after markdown has been parsed.
+      // This keeps lecture.md clean — no reveal-specific annotations required.
+      Reveal.on("ready", () => {
+        const sections = document.querySelectorAll(".reveal .slides > section");
+        let passedClosing = false;
+
+        sections.forEach((section) => {
+          const heading = section.querySelector("h2");
+          const title = heading ? heading.textContent : "";
+
+          // Slide 11: Content Warning — minimal, centered, no auto-advance
+          if (/content\s+warning/i.test(title)) {
+            section.classList.add("content-warning");
+            section.setAttribute("data-autoslide", "0");
+          }
+
+          // Any slide authored after "Closing" is treated as appendix (e.g. Q&A).
+          // `uncounted` keeps them reachable by forward navigation but hides
+          // them from the slide count / progress bar so they aren't part of
+          // the normal flow.
+          if (passedClosing) {
+            section.setAttribute("data-visibility", "uncounted");
+          }
+          if (/closing/i.test(title)) {
+            passedClosing = true;
+          }
+        });
+
+        Reveal.sync();
+        autoFitSlides();
+      });
+
+      // After layout, shrink any slide whose content overflows its canvas.
+      // Reveal's slide height defaults to 700px. We measure scrollHeight vs
+      // clientHeight and apply a scale factor via a CSS custom property.
+      function autoFitSlides() {
+        const sections = document.querySelectorAll(".reveal .slides > section");
+        sections.forEach((section) => {
+          // Skip vertical-stack parents and the content-warning slide
+          if (section.querySelector(":scope > section")) return;
+          if (section.classList.contains("content-warning")) return;
+
+          // Force reveal to lay this slide out so we can measure it
+          const prevDisplay = section.style.display;
+          section.style.display = "block";
+          section.style.visibility = "hidden";
+
+          const available = section.clientHeight || 700;
+          const needed = section.scrollHeight;
+
+          if (needed > available + 2) {
+            const scale = Math.max(0.55, (available / needed) * 0.97);
+            section.style.setProperty("--fit-scale", scale.toFixed(3));
+            section.setAttribute("data-fit", "");
+          }
+
+          section.style.display = prevDisplay;
+          section.style.visibility = "";
+        });
+        Reveal.layout();
+      }
+
+      // Recompute on resize
+      window.addEventListener("resize", () => {
+        document.querySelectorAll(".reveal .slides > section[data-fit]").forEach((s) => {
+          s.removeAttribute("data-fit");
+          s.style.removeProperty("--fit-scale");
+        });
+        autoFitSlides();
+      });
+    </script>
+  </body>
+</html>
