@@ -2,7 +2,7 @@
 
 Geospatial Corroboration of Torture Testimony in Conflict Zones
 
-Matt Harris
+Matthew Harris\
 Former Technical Liaison Officer, UNHCR - Survivors of Torture Program 
 
 Apr 9th - Arizona State University
