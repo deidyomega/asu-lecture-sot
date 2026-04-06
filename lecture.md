@@ -144,6 +144,38 @@ Apr 9th, 2026 - Arizona State University
 
 ---
 
+## Content Warning
+
+**Content Warning**
+
+> Speaker notes: "The next slide is going to humanize what we've been talking about. It involves sexual assault and crimes against children. If that's not something you want to hear about right now, please feel free to look away or step out - no one will think anything of it.
+> 
+> There will be no visuals - just a description of a GIS query. But I think it's important you see it, because we can't understand the weight of this work without understanding what's behind the data. Behind every statistic is a real person. That's why the methodology matters. That's why the rigor matters.
+> 
+> I'll give you a moment." *Take a deep breath, and count down from 8*
+
+---
+
+## The Human Cost of the Data
+
+I need a table where:
+
+- the top is girls aged, 3-12
+- the left is the lists of torture types
+- the cells are the number of cases, split by if a caregiver was present
+
+The torture types are: sexual assault, electrocution, beatings, hanging, burning, mock execution, waterboarding. Add any other types that have a higher count than the lowest count of the types listed above.
+
+> Speaker notes: "I want to be honest about what this work costs. There's a perception that the technical people are insulated - that because we're working with data instead of sitting across from a survivor, we're protected from the emotional weight. We're not.
+> 
+> You don't have to be in the room with the survivor to carry the weight. The GIS analyst never conducts an interview. They never meet the survivor face to face. But they're the one who runs the query you see on the screen.
+> 
+> And then a table comes back. And you have to do something with that table. You have to put it on a map. You have to cross-reference it. You have to write it in a report. And then you have to go home.
+> 
+> The distance that data creates is real. But it is not enough. You carry it differently, but you carry it."
+
+---
+
 ## Connecting the Practice to the Research
 
 **Where my work meets the Edler et al. findings**
