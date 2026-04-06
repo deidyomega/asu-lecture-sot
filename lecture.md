@@ -15,7 +15,7 @@ Apr 9th, 2026 - Arizona State University
 **How do you build a case when you can't go to the crime scene?**
 
 > Speaker notes: "In armed conflict, survivors of torture come forward with accounts that are vivid, specific, and deeply personal. But testimony alone - no matter how credible - isn't enough to trigger a formal investigation. You need corroboration. And the places where these things happened are active conflict zones. You can't send an investigator to knock on doors. So the question my team was trying to answer every day was: how do you corroborate a survivor's account from a distance? That's what I'm going to walk you through today. As a note, one of the slides will be very dark, I’ll warn you about it when get there again.”
-> 
+
 
 ---
 
@@ -36,6 +36,8 @@ They note that remote sensing is increasingly used to document conflict-things l
 But as academic RS researchers entered the field around 2013, the methodology shifted. Remote data started validating other remote data. The ground-truth human knowledge - the testimony, the local context - got sidelined.
 
 The paper also points out that certain violations are simply invisible to satellites. You can see a bombed building from space. You cannot see torture, sexual violence, or forced interrogation.
+
+The paper also surfaces something the professor asked me to touch on — who has access to this data and what that means for justice. Edler documents a heavy dependency on commercial satellite providers, especially in the early years. Companies like Maxar and Planet control the very-high-resolution imagery. They decide who gets access, and sometimes they restrict it — Planet limited access to Gaza imagery after October 2023. That creates a two-tiered system. If you have satellite access, you can document violations. If you don't, your conflict stays invisible. The countries with the satellites get to produce the evidence. The people being bombed don't get to choose whether the camera is pointed at them.
 
 Ultimately, the paper calls for a return to interdisciplinary collaboration between RS researchers and human rights practitioners. My work sits right in that pre-2013 window, and it represents exactly the approach this paper argues the field is losing.”
 
@@ -124,7 +126,9 @@ There's another dimension here that's uncomfortable but I think it's important t
 - Cross-referenced against method signatures from typology
 - The survivor had no access to this data - alignment is independent corroboration
 
-> Speaker notes: "This is where it all comes together. I take the structured testimony - place, time, method, motive - and overlay it against an entirely independent data source: classified estimated troop movements. The survivor didn't know where intelligence assessed Unit X to be on March 15th. But if they say 'soldiers with these markings held me at this location for three days starting around mid-March,' and the troop movement data shows that unit was assessed to be in that area during that window - that's not a coincidence I can dismiss. That's corroboration from an independent source. Then I cross-reference the typology - does the method signature match what's known about units operating in that area? If the location lines up, the timing lines up, and the method lines up, I'm looking at three independent data points converging. The Edler paper calls this triangulation, and they're right - but the key is that these are genuinely independent data streams. Clinical intake, structured survivor reporting, and classified military intelligence. No circular validation. I'm not using remote sensing to validate other remote sensing. I'm using data the survivor never had access to, to test whether their account holds up."
+> Speaker notes: This is where it all comes together. I take the structured testimony - place, time, method, motive - and overlay it against an entirely independent data source: classified estimated troop movements. The survivor didn't know where intelligence assessed Unit X to be on March 15th. But if they say 'soldiers with these markings held me at this location for three days starting around mid-March,' and the troop movement data shows that unit was assessed to be in that area during that window - that's not a coincidence I can dismiss. That's corroboration from an independent source. Then I cross-reference the typology - does the method signature match what's known about units operating in that area? If the location lines up, the timing lines up, and the method lines up, I'm looking at three independent data points converging. The Edler paper calls this triangulation, and they're right - but the key is that these are genuinely independent data streams. Clinical intake, structured survivor reporting, and classified military intelligence. No circular validation. I'm not using remote sensing to validate other remote sensing. I'm using data the survivor never had access to, to test whether their account holds up.
+
+I want to flag something here for the folks in the room thinking about cybersecurity and data access. This pipeline works because we had access to classified troop movement data. That access enabled accountability. But flip it — the same satellite infrastructure that lets us corroborate a torture victim's story can be used by an adversary to figure out where their units were detected, which tells them where the intelligence gaps are. Open source satellite imagery has been used by armed actors to plan operations, track displacement patterns, figure out where people fled to. The tool is morally neutral. Who's holding it is what matters. And that's a question this class has been chewing on all semester.
 
 ---
 
@@ -199,6 +203,8 @@ The distance that data creates is real. But it is not enough. You carry it diffe
 
 **Neither one works alone.**
 
-> Speaker notes: "What satellites can't see, survivors can tell you. What survivors can't prove, the data can corroborate. Neither one works alone.
+> Speaker notes: What satellites can't see, survivors can tell you. What survivors can't prove, the data can corroborate. Neither one works alone.
 
-Somehow in the most human of experiences.. we forgot to include the human who experienced it. Thank you. I'm happy to take questions.”
+And as satellite data becomes more accessible, the question isn't **just** whether we use it for justice — it's whether we can prevent it from being used against the people it's supposed to protect
+
+Somehow in the most human of experiences.. we forgot to include the human who experienced it. Thank you. I'm happy to take questions.
