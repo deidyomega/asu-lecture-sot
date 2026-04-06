@@ -23,16 +23,22 @@ Apr 9th - Arizona State University
 
 **Edler et al. (2025) - A Systematic Review**
 
-- Reviewed 901 articles, selected 48 with 51 empirical studies (2006–2023)
-- Remote sensing is increasingly used to document conflict - damage assessment, land cover change, fire patterns
-- But the field has a problem: **validation has shifted**
-    - Pre-2013: RS data validated claims from ground sources (NGO networks, witnesses, local contacts)
-    - Post-2013: RS data validates... other RS data
-- Certain violations remain **invisible** to satellites - torture, sexual violence, forced interrogation
-- The paper calls for more interdisciplinary collaboration between RS researchers and human rights practitioners
+- **The Scope:** 51 empirical studies (2006–2023)
+- **The Baseline:** Tracking physical damage
+- **The Problem:** The "Validation Shift"
+- **The Blindspot:** Invisible violations
+- **The Call:** Interdisciplinary collaboration
 
-> Speaker notes: "Before I get into my own work, I want to give you some context from the current literature. This paper by Edler and colleagues came out in late 2025 - it's a systematic review of how satellite remote sensing has been used to document human rights violations in conflict zones. They reviewed over 900 articles. And they found something that concerns me. Early on, practitioners were using satellite data to corroborate what people on the ground were reporting - NGO networks, witnesses, local contacts would surface a claim, and remote sensing would help validate it. But as academic RS researchers entered the field around 2013, the methodology shifted. Remote data started validating other remote data. The ground-truth human knowledge - the testimony, the local context - got sidelined. The paper also points out that certain violations are simply invisible to satellites. You can see a bombed building from space. You cannot see torture. My work sits right in that pre-2013 window, and it represents the approach this paper argues the field is losing.”
-> 
+> Speaker notes: "Before I get into my own work, I want to give you some context from the current literature. The paper by Edler and colleagues came out in late 2025 - it's a systematic review of how satellite remote sensing has been used to document human rights violations in conflict zones. They reviewed over 900 articles, narrowing it down to 48 articles containing 51 empirical studies from 2006 to 2023.
+
+They note that remote sensing is increasingly used to document conflict—things like damage assessment, land cover change, and fire patterns. But they found something that concerns me. The field has a problem: validation has shifted. Early on, practitioners were using satellite data to corroborate what people on the ground were reporting. NGO networks, witnesses, local contacts would surface a claim, and remote sensing would help validate it.
+
+But as academic RS researchers entered the field around 2013, the methodology shifted. Remote data started validating other remote data. The ground-truth human knowledge - the testimony, the local context - got sidelined.
+
+The paper also points out that certain violations are simply invisible to satellites. You can see a bombed building from space. You cannot see torture, sexual violence, or forced interrogation.
+
+Ultimately, the paper calls for a return to interdisciplinary collaboration between RS researchers and human rights practitioners. My work sits right in that pre-2013 window, and it represents exactly the approach this paper argues the field is losing.”
+
 
 ---
 
@@ -42,12 +48,16 @@ Apr 9th - Arizona State University
 **IRC/UNHCR - Survivors of Torture (SOT) Program, 2012 - 2014**\
 **UNHCR - Survivors of Torture (SOT) Program, 2022 - 2023**
 
-- Built the data pipeline between clinical intake and geospatial analysis.
-- Goal: corroborate survivor testimony using GIS and temporal data to determine which military and paramilitary units were likely involved in torture
-- Not replacing testimony - **validating it with data the survivor could not have known without being there**
+- **The Role:** Building the data pipeline
+- **The Goal:** Corroborating testimony via GIS &amp; RS &amp; Military Data
+- **The Principle:** Independent data validation
 
-> Speaker notes: "So who am I in all this? From 2012 to 2014 I was a Technical Liaison Officer with UNHCR, working specifically with the Survivors of Torture program. My job was to be the bridge between the clinical side and the analytical side. I wasn't the person interviewing survivors. I wasn't a field investigator. I was the person who built and operated the system that connected a survivor's words to spatial-temporal evidence. The key idea - and I want you to hold onto this phrase because it's the foundation of everything I'm going to show you - is that we were validating testimony with data the survivor could not have known. That's what makes the corroboration meaningful. They didn't have access to classified troop movements. If their account lines up with that data anyway, that tells you something.”
-> 
+> Speaker notes: "So who am I in all this? I've worked with the Survivors of Torture program across several stints with the IRC and UNHCR from 2010 through 2023. My job was to be the bridge between the clinical side and the analytical side. I wasn't the person interviewing survivors. I wasn't a field investigator.
+
+I was the person who built and operated the data pipeline that connected a survivor's clinical intake to geospatial analysis. The goal of this was to corroborate their testimony using GIS and temporal data to figure out exactly which military and paramilitary units were likely involved in the torture.
+
+The key idea - and I want you to hold onto this phrase because it's the foundation of everything I'm going to show you - is that we were not replacing testimony. We were validating it with data the survivor could not have known without being there. That's what makes the corroboration meaningful. They didn't have access to classified troop movements. If their account lines up with that data anyway, that tells you something.”
+
 
 ---
 
@@ -55,13 +65,19 @@ Apr 9th - Arizona State University
 
 **Four stages, four different skill sets, one chain of evidence**
 
-1. **Clinical Interview** - conducted by a licensed psychologist or therapist
-2. **Structured Intake Form** - designed by the SOT team, capturing the W's plus typology
-3. **Geospatial Overlay** - placing testimony on the map against classified troop movement data
-4. **Correlation → Investigation** - strong matches trigger formal investigation
+1. Clinical Interview
+2. Structured Intake Form
+3. Geospatial Overlay
+4. Investigation Trigger
 
-> Speaker notes: "Here's the pipeline at a high level. Four stages, four different skill sets, one chain of evidence. I'm going to walk you through each one, but before I do, I want you to notice something about this structure: the person doing the interview is not the person reading the map. The person filling out the form is not the person running the troop movement overlay. That separation is deliberate, and it's there for a reason I'll get into on the next slide.”
-> 
+> Speaker notes: "Here's the pipeline at a high level. Four stages, four different skill sets, one chain of evidence. I'm going to walk you through each one.
+
+First, the clinical interview, which is always conducted by a licensed psychologist or therapist.
+Second, the structured intake form, which our team designed to capture the who, what, when, where, why, and the specific torture typology.
+Third, the geospatial overlay, where we take that testimony and place it on the map against classified troop movement data.
+And finally, the investigation trigger, where strong spatial-temporal correlations are used to launch formal investigations.
+
+Before I dive into each step, I want you to notice something about this structure: the person doing the interview is not the person reading the map. The person filling out the form is not the person running the troop movement overlay. That separation is deliberate, and it's there for a reason I'll get into on the next slide.” 
 
 ---
 
@@ -147,27 +163,29 @@ There's another dimension here that's uncomfortable but I think it's important t
 
 **Content Warning**
 
-> Speaker notes: "The next slide is going to humanize what we've been talking about. It involves sexual assault and crimes against children. If that's not something you want to hear about right now, please feel free to look away or step out - no one will think anything of it. I'll give you a moment. There will be no visuals, a description of the GIS query" *Take a deep breath, and count down from 8*
+> Speaker notes: "The next slide is going to humanize what we've been talking about. It involves sexual assault and crimes against children. If that's not something you want to hear about right now, please feel free to look away or step out — no one will think anything of it. I'll give you a moment.
+
+There will be no visuals — just a description of a GIS query. But I think it's important you see it, because we can't understand the weight of this work without understanding what's behind the data. Behind every statistic is a real person. That's why the methodology matters. That's why the rigor matters." *Take a deep breath, and count down from 8*
 
 ---
 
 ## The Human Cost of the Data
 
-**A note on what this work does to the people who do it**
+I need a table where:
 
-You don't have to be in the room with the survivor to carry the weight.
+- the top is girls aged, 3-12
+- the left is the lists of torture types
+- the cells are the number of cases, split by if a caregiver was present
 
-The GIS analyst never conducts an interview. They never meet the survivor face to face. But they're the one who runs the query:
+The torture types are: sexual assault, electrocution, beatings, hanging, burning, mock execution, waterboarding. Add any other types that have a higher count than the lowest count of the types listed above.
 
-*"How many girls between the ages of 4 and 12 were raped in northern Iraq between March and April of this year, how many electrocuted?"*
+> Speaker notes: "I want to be honest about what this work costs. There's a perception that the technical people are insulated - that because we're working with data instead of sitting across from a survivor, we're protected from the emotional weight. We're not.
 
-And then a number comes back.
+You don't have to be in the room with the survivor to carry the weight. The GIS analyst never conducts an interview. They never meet the survivor face to face. But they're the one who runs the query you see on the screen.
 
-And you have to do something with that number. You have to put it on a map. You have to cross-reference it. You have to write it in a report. And then you have to go home.
+And then a table comes back. And you have to do something with that table. You have to put it on a map. You have to cross-reference it. You have to write it in a report. And then you have to go home.
 
-**The distance that data creates is real. But it is not enough.**
-
-> Speaker notes: "I want to be honest about what this work costs. There's a perception that the technical people are insulated - that because we're working with data instead of sitting across from a survivor, we're protected from the emotional weight. We're not. You carry it differently. But you carry it."  *Don't dwell*
+The distance that data creates is real. But it is not enough. You carry it differently, but you carry it."
 
 ---
 
