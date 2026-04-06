@@ -43,7 +43,6 @@ Apr 9th - Arizona State University
 **UNHCR - Survivors of Torture (SOT) Program, 2022 - 2023**
 
 - Built the data pipeline between clinical intake and geospatial analysis.
-- Limited field work in northern Iraq.
 - Goal: corroborate survivor testimony using GIS and temporal data to determine which military and paramilitary units were likely involved in torture
 - Not replacing testimony - **validating it with data the survivor could not have known without being there**
 
