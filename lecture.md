@@ -4,9 +4,9 @@ Geospatial Corroboration of Torture Testimony in Conflict Zones
 
 Matthew Harris\
 UNHCR/IRC\
-Survivors of Torture Program 
+Survivors of Torture Program (SOT)
 
-Apr 9th - Arizona State University
+Apr 9th, 2026 - Arizona State University
 
 ---
 
@@ -31,7 +31,7 @@ Apr 9th - Arizona State University
 
 > Speaker notes: "Before I get into my own work, I want to give you some context from the current literature. The paper by Edler and colleagues came out in late 2025 - it's a systematic review of how satellite remote sensing has been used to document human rights violations in conflict zones. They reviewed over 900 articles, narrowing it down to 48 articles containing 51 empirical studies from 2006 to 2023.
 
-They note that remote sensing is increasingly used to document conflict—things like damage assessment, land cover change, and fire patterns. But they found something that concerns me. The field has a problem: validation has shifted. Early on, practitioners were using satellite data to corroborate what people on the ground were reporting. NGO networks, witnesses, local contacts would surface a claim, and remote sensing would help validate it.
+They note that remote sensing is increasingly used to document conflict-things like damage assessment, land cover change, and fire patterns. But they found something that concerns me. The field has a problem: validation has shifted. Early on, practitioners were using satellite data to corroborate what people on the ground were reporting. NGO networks, witnesses, local contacts would surface a claim, and remote sensing would help validate it.
 
 But as academic RS researchers entered the field around 2013, the methodology shifted. Remote data started validating other remote data. The ground-truth human knowledge - the testimony, the local context - got sidelined.
 
@@ -44,9 +44,9 @@ Ultimately, the paper calls for a return to interdisciplinary collaboration betw
 
 ## My Role
 
-**IRC - Survivors of Torture (SOT) Program, 2010 - 2012**\
-**IRC/UNHCR - Survivors of Torture (SOT) Program, 2012 - 2014**\
-**UNHCR - Survivors of Torture (SOT) Program, 2022 - 2023**
+**IRC - SOT Program, 2010 - 2012**\
+**IRC/UNHCR - SOT Program, 2012 - 2014**\
+**UNHCR - SOT Program, 2022 - 2023**
 
 - **The Role:** Building the data pipeline
 - **The Goal:** Corroborating testimony via GIS &amp; RS &amp; Military Data
@@ -75,87 +75,68 @@ The key idea - and I want you to hold onto this phrase because it's the foundati
 First, the clinical interview, which is always conducted by a licensed psychologist or therapist.
 Second, the structured intake form, which our team designed to capture the who, what, when, where, why, and the specific torture typology.
 Third, the geospatial overlay, where we take that testimony and place it on the map against classified troop movement data.
-And finally, the investigation trigger, where strong spatial-temporal correlations are used to launch formal investigations.
+And finally, the investigation trigger, where strong spatial-temporal correlations are used to request a formal investigation.
 
-Before I dive into each step, I want you to notice something about this structure: the person doing the interview is not the person reading the map. The person filling out the form is not the person running the troop movement overlay. That separation is deliberate, and it's there for a reason I'll get into on the next slide.” 
+Before I dive into each step, I want you to notice something about this structure: the person doing the interview is not the person reading the map. The person who manages the data is not the person running the troop movement overlay. That separation is deliberate, and it's there for a reason I'll get into on the next slide.” 
 
 ---
 
 ## Stage 1 - The Clinical Interview
 
-**A licensed psychologist or therapist conducts the interview. Always.**
+- Licensed psychologist or therapist
+- Wellbeing first, not evidence collection
+- No access to maps, troop data, or prior correlations
+- Deliberate firewall against confirmation bias
 
-- The clinician's job is the survivor's wellbeing - not evidence collection
-- They are trained in trauma-informed interviewing
-- They have no access to maps, troop data, or prior case correlations*
-- This is a **deliberate firewall against confirmation bias**
-
-> Speaker notes: "The interview is conducted by a licensed psychologist or therapist. Their primary job is the survivor's wellbeing, not evidence collection. They're trained in trauma-informed interviewing. And critically - they have no access to our maps, our troop data, or any prior case correlations. This is a deliberate firewall against confirmation bias. The Edler paper spends a lot of time on what they call the 'seeing is believing' problem - researchers interpreting satellite images through the lens of what they expect to find. The most famous example is Colin Powell presenting aerial surveillance imagery to the UN Security Council in 2003, claiming Iraq had weapons of mass destruction. What got 'read into' those images was what the administration was most afraid of. Our pipeline prevents that at the very first step. The clinician doesn't know what the map looks like. They can't lead a survivor toward an answer that fits a spatial hypothesis someone already has. They're capturing what the survivor reports. Period.”
-> 
+> Speaker notes: "The interview is always conducted by a licensed psychologist or therapist. Their primary job is the survivor's wellbeing, not evidence collection. They're trained in trauma-informed interviewing. And critically - they have no access to our maps, our troop data, or any prior case correlations. This is a deliberate firewall against confirmation bias. The Edler paper spends a lot of time on what they call the 'seeing is believing' problem - researchers interpreting satellite images through the lens of what they expect to find. The most famous example is Colin Powell presenting aerial surveillance imagery to the UN Security Council in 2003, claiming Iraq had weapons of mass destruction. What got 'read into' those images was what the administration was most afraid of. Our pipeline prevents that at the very first step. The clinician doesn't know what the map looks like. They can't lead a survivor toward an answer that fits a spatial hypothesis someone already has. They're capturing what the survivor reports. Period."
 
 ---
 
 ## Stage 2 - The Structured Form
 
-**The W's - plus typology and motive**
+- Clinical narrative → structured, analyzable data
+- Captures the W's plus typology and motive
+- Designed by the SOT team
+- The translation layer between testimony and GIS
 
-- **Who** - any identifying information about perpetrators (unit markings, uniforms, language, insignia)
-- **What** - what specifically was done (the type of torture matters - more on this next)
-- **When** - dates, times, duration, sequence of events
-- **Where** - locations, descriptions of facilities, landmarks, surroundings
-- **Why** - what was the apparent purpose?
-
-The form was designed by the SOT team to translate clinical narrative into structured, analyzable data.
-
-> Speaker notes: "Once the clinical interview is done, the clinician fills out a structured form that our team designed. This is the translation layer. A survivor tells their story in narrative form - it's messy, emotional, nonlinear the ways that trauma always is. The form converts that narrative into structured fields I can operationalize geospatially. Who, what, when, where, why. This is the step that most of the remote sensing studies in the Edler review skip entirely - because they never touch testimony. They go straight from satellite to conclusion. Our team built a pipeline which includes a structured form. We controlled the data schema, which means we controlled what information was captured consistently across every case that came through the program.”
-> 
+> Speaker notes: "Once the clinical interview is done, the clinician fills out a structured form that our team designed. This is the translation layer. A survivor tells their story in narrative form - it's messy, emotional, nonlinear the way trauma always is. The form converts that narrative into structured fields I can operationalize geospatially. Who - any identifying information about perpetrators. Unit markings, uniforms, language, insignia. What - what specifically was done, and the type of torture matters, which I'll get into on the next slide. When - dates, times, duration, sequence of events. Where - locations, descriptions of facilities, landmarks, surroundings. And why - what was the apparent purpose? Each of those becomes a field I can work with. This is the step that most of the remote sensing studies in the Edler review skip entirely - because they never touch testimony. They go straight from satellite to conclusion. Our team built a pipeline that includes this structured form. We controlled the data schema, which means we controlled what information was captured consistently across every case that came through the program."
 
 ---
 
 ## The Typology Layer - Why "What" and "Why" Matter
 
-**Different operators torture differently. This is a discriminator.**
+- Type of torture as a method signature
+- Different operators torture differently - this is a discriminator
+- Motive matters: interrogation vs. terror vs. gratification
+- Invisible to satellites - but increases confidence of spatial-temporal match
+- Also functions as a consistency check
 
-- Type of torture functions as a **method signature**
-- Electrical torture during interrogation looks very different from sexual violence with no intelligence objective
-- Interrogation-driven torture ("we need the security rotation for this power plant") vs. gratification-driven torture - both are crimes, but they paint very different operational pictures
-- Across multiple survivors, consistent method signatures help identify or narrow down which unit was operating in an area
-- This is a data dimension that **no satellite will ever capture** - but it dramatically increases the confidence of a spatial-temporal match
+> Speaker notes: "This is probably the part that surprises you if you came in expecting a GIS or remote sensing talk. What I'm describing is behavioral profiling of military and paramilitary units, built up from survivor accounts. Different operators torture differently. Electrical torture during interrogation looks very different from sexual violence with no intelligence objective. 'We need the security rotation for this power plant' is a very different crime than gratification-driven sexual violence. Both are crimes. But they paint very different operational pictures. If Unit X consistently uses a specific interrogation technique and Unit Y uses sexual violence as a terror tactic, then the type of torture a survivor describes becomes an independent variable I can cross-reference against known unit presence. Three survivors from the same region and timeframe who all describe the same method? That's a pattern. One describes something completely different? I may be looking at a second unit in the area - or a different operational phase. The 'why' matters too because motive tells me something about the unit's mission profile. A unit extracting actionable intelligence is operating differently than a unit using violence to terrorize a civilian population. Both are crimes. But they have different command structures, different objectives, and potentially different accountability chains. No satellite will ever capture this. But it dramatically increases my confidence in a spatial-temporal match.
 
-> Speaker notes: This is probably the part that surprises you if you came in expecting a GIS talk. What I'm describing is behavioral profiling of military and para military units, built up from survivor accounts. If Unit X consistently uses a specific interrogation technique and Unit Y uses sexual violence as a terror tactic, then the type of torture a survivor describes becomes an independent variable I can cross-reference against known unit presence. Three survivors from the same region and timeframe who all describe the same method? That's a pattern. One describes something completely different? I may be looking at a second unit in the area - or a different operational phase. The "why" matters too because motive tells me something about the unit's mission profile. A unit extracting actionable intelligence is operating differently than a unit using violence to terrorize a civilian population. Both are crimes. But they have different command structures, different objectives, and potentially different accountability chains. 
-
-There's another dimension here that's uncomfortable but I think it's important to be honest with you about. The typology layer also functioned as a consistency check - because not every claim was genuine. Survivors of Torture receive enhanced benefits when they resettle in the United States. That's the right policy. But limited resources mean limited slots, and that reality creates an incentive structure. Sometimes people would invent or embellish an event to qualify for those benefits. I never blamed anyone for trying - these are people in desperate circumstances doing what they can to survive. But it meant we had to watch for it constantly, because every fabricated case that moved forward was resources pulled away from someone with a legitimate claim. When a reported event was an outlier - a method signature that didn't match any known unit activity in that area, a motive that didn't track with the operational picture - sometimes the explanation wasn't a second unit. Sometimes the person was lying. The typology layer helped surface those cases too. It's dark, but pretending it didn't happen would be dishonest about how the system actually worked.
-> 
+There's another dimension here that's uncomfortable but I think it's important to be honest with you about. That last bullet - consistency check. The typology layer also surfaced fabrications, because not every claim was genuine. Survivors of Torture receive enhanced benefits when they resettle in the United States. That's the right policy. But limited resources mean limited slots, and that reality creates an incentive structure. Sometimes people would invent or embellish an event to qualify for those benefits. I never blamed anyone for trying - these are people in desperate circumstances doing what they can to survive. But it meant we had to watch for it constantly, because every fabricated case that moved forward was resources pulled away from someone with a legitimate claim. When a reported event was an outlier - a method signature that didn't match any known unit activity in that area, a motive that didn't track with the operational picture - sometimes the explanation wasn't a second unit. Sometimes the person was lying. The typology layer helped surface those cases too. It's dark, but pretending it didn't happen would be dishonest about how the system actually worked."
 
 ---
 
 ## Stage 3 - The Geospatial Overlay
 
-**Placing testimony on the map**
+- Testimony plotted in GIS - location and temporal window
+- Overlaid against classified estimated troop movement data
+- Cross-referenced against method signatures from typology
+- The survivor had no access to this data - alignment is independent corroboration
 
-- Survivor's reported locations plotted in GIS
-- Temporal window from the testimony layered against **classified estimated troop movement data**
-- Looking for spatial-temporal correlation: Was the unit the survivor describes assessed to be in that location during that window?
-- Cross-referencing the typology: Does the method signature match what's known about units operating in that area?
-
-**The power of this approach: the survivor did not have access to the classified troop movement data. If their account aligns with it, that is independent corroboration.**
-
-> Speaker notes: "This is where it all comes together. I take the structured testimony - place, time, method, motive - and overlay it against an entirely independent data source: classified estimated troop movements. The survivor didn't know where intelligence assessed Unit X to be on March 15th. But if they say 'soldiers with these markings held me at this location for three days starting around mid-March,' and the troop movement data shows that unit was assessed to be in that area during that window - that's not a coincidence I can dismiss. That's corroboration from an independent source. The Edler paper calls this triangulation, and they're right - but the key is that these are genuinely independent data streams. Clinical intake, structured survivor reporting, and classified military intelligence. No circular validation. I'm not using remote sensing to validate other remote sensing. I'm using data the survivor never had access to, to test whether their account holds up.”
-
+> Speaker notes: "This is where it all comes together. I take the structured testimony - place, time, method, motive - and overlay it against an entirely independent data source: classified estimated troop movements. The survivor didn't know where intelligence assessed Unit X to be on March 15th. But if they say 'soldiers with these markings held me at this location for three days starting around mid-March,' and the troop movement data shows that unit was assessed to be in that area during that window - that's not a coincidence I can dismiss. That's corroboration from an independent source. Then I cross-reference the typology - does the method signature match what's known about units operating in that area? If the location lines up, the timing lines up, and the method lines up, I'm looking at three independent data points converging. The Edler paper calls this triangulation, and they're right - but the key is that these are genuinely independent data streams. Clinical intake, structured survivor reporting, and classified military intelligence. No circular validation. I'm not using remote sensing to validate other remote sensing. I'm using data the survivor never had access to, to test whether their account holds up."
 
 ---
 
 ## Stage 4 - From Correlation to Investigation
 
-**Strong correlations trigger investigations. Not conclusions.**
+- Correlation is a trigger, not a verdict
+- Consistent with facts they could not have known
+- Multiple accounts → same unit, same area, same timeframe → pattern
+- Pattern justifies committing investigative resources
+- GIS opens the door - human investigators walk through it
 
-- A spatial-temporal match doesn't prove Unit X tortured this person
-- It establishes that the survivor's account is **consistent with facts they could not have known**
-- Multiple corroborated accounts pointing to the same unit, same area, same timeframe → pattern
-- That pattern is what justifies committing investigative resources
-- The GIS analysis opens the door. Human investigators walk through it.
-
-> Speaker notes: "I want to be clear about what this step is and what it isn't. A spatial-temporal match does not prove that Unit X tortured this person. What it establishes is that the survivor's account is consistent with facts they could not have known without being there. That's the trigger, not the verdict. Where it gets powerful is when you start seeing multiple corroborated accounts pointing to the same unit, in the same area, during the same timeframe. That's a pattern. And that pattern is what justifies committing scarce investigative resources. Because those resources are scarce - you can't investigate everything. The geospatial pipeline helped us prioritize where the evidence was strongest. The GIS analysis opens the door. Human investigators walk through it.”
+> Speaker notes: "I want to be clear about what this step is and what it isn't. A spatial-temporal match does not prove that Unit X tortured this person. What it establishes is that the survivor's account is consistent with facts they could not have known without being there. That's the trigger, not the verdict. Where it gets powerful is when you start seeing multiple corroborated accounts pointing to the same unit, in the same area, during the same timeframe. That's a pattern. And that pattern is what justifies committing scarce investigative resources. Because those resources are scarce - you can't investigate everything. The geospatial pipeline helped us prioritize where the evidence was strongest. The GIS analysis opens the door. Human investigators walk through it."
 
 ---
 
@@ -163,9 +144,11 @@ There's another dimension here that's uncomfortable but I think it's important t
 
 **Content Warning**
 
-> Speaker notes: "The next slide is going to humanize what we've been talking about. It involves sexual assault and crimes against children. If that's not something you want to hear about right now, please feel free to look away or step out — no one will think anything of it. I'll give you a moment.
+> Speaker notes: "The next slide is going to humanize what we've been talking about. It involves sexual assault and crimes against children. If that's not something you want to hear about right now, please feel free to look away or step out - no one will think anything of it.
 
-There will be no visuals — just a description of a GIS query. But I think it's important you see it, because we can't understand the weight of this work without understanding what's behind the data. Behind every statistic is a real person. That's why the methodology matters. That's why the rigor matters." *Take a deep breath, and count down from 8*
+There will be no visuals - just a description of a GIS query. But I think it's important you see it, because we can't understand the weight of this work without understanding what's behind the data. Behind every statistic is a real person. That's why the methodology matters. That's why the rigor matters.
+
+I'll give you a moment." *Take a deep breath, and count down from 8*
 
 ---
 
@@ -201,7 +184,9 @@ The distance that data creates is real. But it is not enough. You carry it diffe
 | Not all conflicts receive equal attention (CNN effect) | UN mandate meant working cases regardless of media coverage |
 | Need for interdisciplinary collaboration | Our team *was* that collaboration - clinicians, GIS analysts, investigators, one shared pipeline |
 
-> Speaker notes: "So let me tie this back to the paper. Each row in this table is a concern Edler and colleagues raised, matched against how our team addressed it operationally. They worry about circular validation - we had three independent data streams. They worry about subjective visual interpretation - our analysts and clinicians never saw each other's data before the overlay. They acknowledge that certain violations - they use gender-based violence as their example - remain invisible to remote sensing. Torture falls into that same category. You can't see it from space. But GIS and temporal data can build the evidentiary scaffolding around the testimony even when the violation itself leaves no satellite-visible trace. They flag the CNN effect, where media attention drives which conflicts get studied - we worked under a UN mandate, so we worked cases regardless of whether they were on the news. And they call for more interdisciplinary collaboration - our team was that collaboration. Clinicians, GIS analysts, investigators, one shared pipeline. The model the paper says the field needs existed. It worked. The question is whether these principles survive as the tools and datasets evolve."
+> Speaker notes: So let me tie this back to the paper. Each row in this table is a concern Edler and colleagues raised, matched against how our team addressed it operationally. They worry about circular validation - we had three independent data streams. They worry about subjective visual interpretation - our analysts and clinicians never saw each other's data before the overlay. They acknowledge that certain violations - they use gender-based violence as their example - remain invisible to remote sensing. Torture falls into that same category. You can't see it from space. But GIS and temporal data can build the evidentiary scaffolding around the testimony even when the violation itself leaves no satellite-visible trace. They flag the CNN effect, where media attention drives which conflicts get studied - we worked under a UN mandate, so we worked cases regardless of whether they were on the news. And they call for more interdisciplinary collaborfation - our team was that collaboration. Clinicians, GIS analysts, investigators, one shared pipeline. The model the paper says the field needs existed. It worked. 
+
+**The question is whether these principles survive as the tools and datasets evolve.**
 
 
 ---
