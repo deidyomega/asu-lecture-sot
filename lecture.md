@@ -96,35 +96,48 @@ Apr 9th, 2026 - Arizona State University
 
 ## Stage 2 - The Structured Form
 
-- Clinical narrative → structured, analyzable data
+- Turns Clinical narrative → structured, analyzable data
 - Captures the W's plus typology and motive
 - Designed by the SOT team
-- The translation layer between testimony and GIS
+- Acts as translation layer between testimony and GIS
 
 > Speaker notes: "Once the clinical interview is done, the clinician fills out a structured form that our team designed. This is the translation layer. A survivor tells their story in narrative form - it's messy, emotional, nonlinear the way trauma always is. The form converts that narrative into structured fields I can operationalize geospatially. Who - any identifying information about perpetrators. Unit markings, uniforms, language, insignia. What - what specifically was done, and the type of torture matters, which I'll get into on the next slide. When - dates, times, duration, sequence of events. Where - locations, descriptions of facilities, landmarks, surroundings. And why - what was the apparent purpose? Each of those becomes a field I can work with. This is the step that most of the remote sensing studies in the Edler review skip entirely - because they never touch testimony. They go straight from satellite to conclusion. Our team built a pipeline that includes this structured form. We controlled the data schema, which means we controlled what information was captured consistently across every case that came through the program."
 
 ---
 
-## The Typology Layer - Why "What" and "Why" Matter
+## The Typology Layer
+### Why "What" and "Why" Matter
 
-- Type of torture as a method signature
-- Different operators torture differently - this is a discriminator
+- Different operators torture differently
+    - A recognizable pattern we call a method signature
+- Method signatures function as a discriminator between units
 - Motive matters: interrogation vs. terror vs. gratification
-- Invisible to satellites - but increases confidence of spatial-temporal match
+- Invisible to satellites
+    - Increases confidence of spatial-temporal match
 - Also functions as a consistency check
 
-> Speaker notes: "This is probably the part that surprises you if you came in expecting a GIS or remote sensing talk. What I'm describing is behavioral profiling of military and paramilitary units, built up from survivor accounts. Different operators torture differently. Electrical torture during interrogation looks very different from sexual violence with no intelligence objective. 'We need the security rotation for this power plant' is a very different crime than gratification-driven sexual violence. Both are crimes. But they paint very different operational pictures. If Unit X consistently uses a specific interrogation technique and Unit Y uses sexual violence as a terror tactic, then the type of torture a survivor describes becomes an independent variable I can cross-reference against known unit presence. Three survivors from the same region and timeframe who all describe the same method? That's a pattern. One describes something completely different? I may be looking at a second unit in the area - or a different operational phase. The 'why' matters too because motive tells me something about the unit's mission profile. A unit extracting actionable intelligence is operating differently than a unit using violence to terrorize a civilian population. Both are crimes. But they have different command structures, different objectives, and potentially different accountability chains. No satellite will ever capture this. But it dramatically increases my confidence in a spatial-temporal match.
-> 
-> There's another dimension here that's uncomfortable but I think it's important to be honest with you about. That last bullet - consistency check. The typology layer also surfaced fabrications, because not every claim was genuine. Survivors of Torture receive enhanced benefits when they resettle in the United States. That's the right policy. But limited resources mean limited slots, and that reality creates an incentive structure. Sometimes people would invent or embellish an event to qualify for those benefits. I never blamed anyone for trying - these are people in desperate circumstances doing what they can to survive. But it meant we had to watch for it constantly, because every fabricated case that moved forward was resources pulled away from someone with a legitimate claim. When a reported event was an outlier - a method signature that didn't match any known unit activity in that area, a motive that didn't track with the operational picture - sometimes the explanation wasn't a second unit. Sometimes the person was lying. The typology layer helped surface those cases too. It's dark, but pretending it didn't happen would be dishonest about how the system actually worked."
+> Speaker notes: "This is probably the part that surprises you if you came in expecting a GIS or remote sensing talk. What I'm describing is behavioral profiling of military and paramilitary units, built up from survivor accounts.
+>
+> Different operators torture differently. And when a unit uses the same techniques repeatedly across cases, that pattern becomes recognizable — we call that a method signature. Think of it like handwriting. If I showed you ten ransom notes, a forensic analyst could start grouping them by who wrote them based on consistent characteristics. Same idea here, except the characteristics are the type of torture, the methods used, and the apparent motive.
+>
+> Electrical torture during interrogation looks very different from sexual violence with no intelligence objective. 'We need the security rotation for this power plant' is a very different crime than gratification-driven sexual violence. Both are crimes. But they paint very different operational pictures - different method signatures.
+>
+> So if Unit X consistently uses a specific interrogation technique and Unit Y uses sexual violence as a terror tactic, then the type of torture a survivor describes becomes an independent variable I can cross-reference against known unit presence. Three survivors from the same region and timeframe who all describe the same method? That's a pattern - the same signature showing up repeatedly. One describes something completely different? I may be looking at a second unit in the area - or a different operational phase.
+>
+> The 'why' matters too because motive tells me something about the unit's mission profile. A unit extracting actionable intelligence is operating differently than a unit using violence to terrorize a civilian population. Both are crimes. But they have different command structures, different objectives, and potentially different accountability chains. No satellite will ever capture this. But it dramatically increases my confidence in a spatial-temporal match.
+>
+> There's another dimension here that's uncomfortable but I think it's important to be honest with you about. That last bullet — consistency check. The typology layer also surfaced fabrications, because not every claim was genuine. Survivors of Torture receive enhanced benefits when they resettle in the United States. That's the right policy. But limited resources mean limited slots, and that reality creates an incentive structure. Sometimes people would invent or embellish an event to qualify for those benefits. I never blamed anyone for trying — these are people in desperate circumstances doing what they can to survive. But it meant we had to watch for it constantly, because every fabricated case that moved forward was resources pulled away from someone with a legitimate claim. When a reported event was an outlier — a method signature that didn't match any known unit activity in that area, a motive that didn't track with the operational picture — sometimes the explanation wasn't a second unit. Sometimes the person was lying. The typology layer helped surface those cases too. It's dark, but pretending it didn't happen would be dishonest about how the system actually worked."
 
 ---
 
 ## Stage 3 - The Geospatial Overlay
 
-- Testimony plotted in GIS - location and temporal window
+- Testimony plotted in GIS
+    - Location and temporal window
 - Overlaid against classified estimated troop movement data
 - Cross-referenced against method signatures from typology
-- The survivor had no access to this data - alignment is independent corroboration
+- The survivor had no access to this data
+    - Alignment is independent corroboration
 
 > Speaker notes: This is where it all comes together. I take the structured testimony - place, time, method, motive - and overlay it against an entirely independent data source: classified estimated troop movements. The survivor didn't know where intelligence assessed Unit X to be on March 15th. But if they say 'soldiers with these markings held me at this location for three days starting around mid-March,' and the troop movement data shows that unit was assessed to be in that area during that window - that's not a coincidence I can dismiss. That's corroboration from an independent source. Then I cross-reference the typology - does the method signature match what's known about units operating in that area? If the location lines up, the timing lines up, and the method lines up, I'm looking at three independent data points converging. The Edler paper calls this triangulation, and they're right - but the key is that these are genuinely independent data streams. Clinical intake, structured survivor reporting, and classified military intelligence. No circular validation. I'm not using remote sensing to validate other remote sensing. I'm using data the survivor never had access to, to test whether their account holds up.
 > 
