@@ -4,7 +4,7 @@
   "private": true,
   "description": "Reveal.js slides for 'What Satellites Can't See'. Content lives in lecture.md.",
   "scripts": {
-    "start": "npx --yes serve .",
-    "dev": "npx --yes serve ."
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
   }
 }
