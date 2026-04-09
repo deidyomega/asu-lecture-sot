@@ -87,7 +87,7 @@ Apr 9th, 2026 - Arizona State University
 
 - Licensed psychologist or therapist
 - Wellbeing first, not evidence collection
-- No access to maps, troop data, or prior correlations
+- No access to maps, troop data, or prior correlations*
 - Deliberate firewall against confirmation bias
 
 > Speaker notes: "The interview is always conducted by a licensed psychologist or therapist. Their primary job is the survivor's wellbeing, not evidence collection. They're trained in trauma-informed interviewing. And critically - they have no access to our maps, our troop data. This is a deliberate firewall against confirmation bias. The Edler paper spends a lot of time on what they call the 'seeing is believing' problem - researchers interpreting satellite images through the lens of what they expect to find. The most famous example is Colin Powell presenting aerial surveillance imagery to the UN Security Council in 2003, claiming Iraq had weapons of mass destruction. What got 'read into' those images was what the administration was most afraid of. Our pipeline prevents that at the very first step. The clinician doesn't know what the map looks like. They can't lead a survivor toward an answer that fits a spatial hypothesis someone already has. They're capturing what the survivor reports. Period."
