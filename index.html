@@ -164,6 +164,14 @@
         }
       });
 
+      // Unwrap blockquotes inside speaker notes. The markdown `> `
+      // continuation lines create <blockquote> elements, but in the
+      // speaker view (separate window) we just want flat paragraphs.
+      document.querySelectorAll("aside.notes blockquote").forEach((bq) => {
+        while (bq.firstChild) bq.parentNode.insertBefore(bq.firstChild, bq);
+        bq.remove();
+      });
+
       Reveal.sync();
       autoFitSlides();
     });
